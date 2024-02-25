@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+}
+
+.container{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.to-do-list-wrapper{
+    width: 100%;
+    margin-top:5rem;
+    padding: 10px;
+    border: 1px  solid lightblue;
+    border-radius: 10px;
+}
+
+.to-do-list-wrapper h3{
+    text-align: center;
+    text-decoration:underline;
+    letter-spacing: 3px;
+    margin-bottom: 2rem;
+    color: orangered;
+}
+
+.to-do-input-wrapper{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 1.5rem;
+}
+
+.to-do-input-wrapper .to-do-input{
+    width: 40%;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid lightblue;
+    padding: 5px;
+    font-size:16px;
+}
+
+
+
+.to-do-input-wrapper .save-btn{
+    padding: 7px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+}
+
+.to-do-input-wrapper .save-btn:hover{
+   box-shadow: 0px 0px 3px blue;
+}
+
+.to-do-input-wrapper .save-btn:active{
+    opacity: .6;
+}
+
+.list{
+    list-style-type: none;
+    margin-bottom: 1rem;
+    border: 1px solid lightblue;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+.list-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 5px;
+    border-radius: 5px;
+}
+
+.list-item:hover{
+    background-color: blue !important;
+    color: white;
+    font-weight: bold;
+}
+
+.list-item:hover .delete-btn{
+    color: white;
+}
+
+.list-item:nth-child(2n+1){
+    background-color: lightblue;
+}
+
+.list-item .list-text{
+    text-wrap: wrap;
+    text-align: justify;
+    padding-right: 5px;
+}
+.active{
+    text-decoration:line-through;
+}
+
+.list-item .delete-btn{
+    padding: 5px;
+    background:none;
+    color: tomato;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.clear-btn{
+    padding: 3px 7px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    color: white;
+    background-color: tomato;
+}
+
+.clear-btn:hover{
+    background-color: red;
+}
+
+.deneme{
+    height: 200px;
+    background-color: red;
+}
